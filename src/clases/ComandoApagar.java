@@ -1,5 +1,6 @@
 package clases;
 
+
 public class ComandoApagar implements Lavadora_IComando{
 	
 	private Lavadora_Receptor lavadora_Receptor;

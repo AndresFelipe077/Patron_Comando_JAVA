@@ -6,11 +6,11 @@ public class Main {
 
 	public static void main(String[] args) {
 
-		EjecutarLavadora();
+		ejecutarLavadora();
 		
 	}//Fin main
 	
-	public static void EjecutarLavadora()
+	public static void ejecutarLavadora()
 	{
 		Lavadora_Receptor lavadora = new Lavadora_Receptor();
 		
@@ -19,7 +19,7 @@ public class Main {
 		int opcion;
 		
 		do {
-			opcion = Menu();
+			opcion = menu();
 			if(opcion != 5)
 			{
 				lavadoraInvoker.seleccionControl(opcion-1);
@@ -28,7 +28,7 @@ public class Main {
 	}
 	
 	
-	public static int Menu()
+	public static int menu()
 	{
 		int opcion = 0;
 		Scanner entrada = new Scanner(System.in);
